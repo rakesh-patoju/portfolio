@@ -115,6 +115,15 @@
         .main-card { grid-column: span 2; }
         .tag-container { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
         .tag { font-family: 'JetBrains Mono'; font-size: 0.7rem; background: rgba(255,255,255,0.03); padding: 6px 12px; border-radius: 8px; color: var(--accent); }
+        .tagsline {
+            font-family: 'JetBrains Mono';
+            font-size: 0.8rem; 
+            background: rgba(255,255,255,0.03);
+            padding: 6px 12px;
+            border-radius: 8px;
+            color: var(--accent);
+        }
+
 
         @media (max-width: 900px) {
             .bento-grid { grid-template-columns: 1fr; }
@@ -231,7 +240,8 @@
     <section class="bento-grid">
         <div class="card main-card">
             <h3>Professional Experience</h3>
-            <p>Software Developer • Envision Enterprise Solutions • 3+ Years</p>
+            <div class="tag-container">
+                <span class="tagsline" ><strong>Software Developer • Envision Enterprise Solutions • 3+ Years</strong></span></div>
             <p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 10px;">
                 Designed and delivered scalable, enterprise-grade backend systems by building RESTful APIs and microservices, orchestrating containerized services with Docker and Kubernetes, and automating CI/CD pipelines using Jenkins—resulting in faster deployments, improved system reliability, and consistently high application performance in production.
             </p>
